@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&display=swap");
+.ns-tc4 {
+  font-family: "Noto Sans TC";
+  font-weight: 400;
+}
+
+.ns-tc7 {
+  font-family: "Noto Sans TC";
+  font-weight: 700;
+}
+
+.ns-tc9 {
+  font-family: "Noto Sans TC";
+  font-weight: 900;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  color: #fff;
+}
+
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+}
+
+.header img {
+  height: 40px;
+  margin: 20px 0;
+}
+
+.header a {
+  font-size: 16px;
+  line-height: 150%;
+  margin-left: 20px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.title h2 {
+  font-size: 120px;
+  line-height: 120%;
+  margin-bottom: 40px;
+}
+
+.title a {
+  display: inline;
+  font-size: 20px;
+  line-height: 120%;
+  padding: 20px 40px;
+  border: 1px solid #FFFFFF;
+  border-radius: 16px;
+  margin-left: 2px;
+  margin-bottom: 100px;
+}
+
+.title div {
+  align-self: flex-end;
+  margin-bottom: 160px;
+}
+
+.service_slogan {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+.service_slogan h3 {
+  width: 31.9444444444%;
+  margin-left: 2px;
+  font-size: 32px;
+  line-height: 120%;
+}
+.service_slogan p {
+  width: 66.049382716%;
+  font-size: 48px;
+  line-height: 120%;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 160px;
+}
+.services li {
+  width: 32.0987654321%;
+  padding: 80px 40px;
+  border: 1px solid #525252;
+  border-radius: 16px;
+}
+.services li img {
+  margin-bottom: 20px;
+}
+.services li h4 {
+  font-size: 32px;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+.services li p {
+  font-size: 16px;
+  line-height: 150%;
+}/*# sourceMappingURL=all.css.map */
