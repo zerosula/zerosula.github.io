@@ -48,17 +48,17 @@
 }
 
 .ns-tc4 {
-  font-family: "Noto Sans TC";
+  font-family: "Noto Sans TC", sans-serif;
   font-weight: 400;
 }
 
 .ns-tc7 {
-  font-family: "Noto Sans TC";
+  font-family: "Noto Sans TC", sans-serif;
   font-weight: 700;
 }
 
 .ns-tc9 {
-  font-family: "Noto Sans TC";
+  font-family: "Noto Sans TC", sans-serif;
   font-weight: 900;
 }
 
@@ -237,30 +237,71 @@ body {
   color: #020202;
   margin-bottom: 53px;
 }
-.container2 .search-icon {
+.container2 .search-bar {
+  margin-bottom: 24px;
+}
+.container2 .search-bar .search-icon {
   position: relative;
   left: 43px;
   top: 47px;
 }
-.container2 .search {
+.container2 .search-bar .search {
   padding: 20px 40px 20px 76px;
   background: #F2F2F2;
   border-radius: 16px;
-  margin-bottom: 24px;
   width: 100%;
   border: 0;
 }
-.container2 .search::-moz-placeholder {
+.container2 .search-bar .search::-moz-placeholder {
   color: #919191;
 }
-.container2 .search::placeholder {
+.container2 .search-bar .search::placeholder {
   color: #919191;
 }
-
+.container2 .menu-bar {
+  display: flex;
+  margin-bottom: 40px;
+}
+.container2 .menu-bar .menu-btn {
+  padding: 20px 40px;
+  background: #FFFFFF;
+  border: 1px solid #F2F2F2;
+  border-radius: 16px;
+  cursor: pointer;
+}
+.container2 .menu-bar .menu-filter {
+  margin-right: 228px;
+}
+.container2 .menu-bar .menu-filter span:first-child {
+  margin-right: 12px;
+}
+.container2 .menu-bar ul {
+  display: flex;
+  align-items: center;
+  margin-right: 244px;
+}
+.container2 .menu-bar ul li {
+  margin-left: 8px;
+}
+.container2 .menu-bar ul li:first-child {
+  margin-left: 0;
+}
+.container2 .menu-bar ul button {
+  padding: 8px 16px;
+  border: 0;
+  background: #fff;
+  cursor: pointer;
+}
+.container2 .menu-bar ul button:hover {
+  font-weight: 700;
+  background: #F2F2F2;
+  border-radius: 16px;
+}
 .card-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .card {

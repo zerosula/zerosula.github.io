@@ -201,23 +201,76 @@ body {
         margin-bottom: 80px-27px;
     }
 
-    .search-icon {
-        position: relative;
-        left: 43px;
-        top: 47px;
+    .search-bar {
+        margin-bottom: 24px;
+
+        .search-icon {
+            position: relative;
+            left: 43px;
+            top: 47px;
+        }
+
+        .search {
+            padding: 20px 40px 20px 76px;
+            background: #F2F2F2;
+            border-radius: 16px;
+            width: 100%;
+            border: 0;
+
+            &::placeholder {
+                color: #919191;
+            }
+        }
     }
 
-    .search {
-        padding: 20px 40px 20px 76px;
-        background: #F2F2F2;
-        border-radius: 16px;
-        margin-bottom: 24px;
-        width: 100%;
-        border: 0;
+    .menu-bar {
+        display: flex;
+        margin-bottom: 40px;
 
-        &::placeholder {
-            color: #919191;
+        .menu-btn {
+            padding: 20px 40px;
+            background: #FFFFFF;
+            border: 1px solid #F2F2F2;
+            border-radius: 16px;
+            cursor: pointer;
         }
+
+        .menu-filter {
+            margin-right: 228px;
+
+            span:first-child {
+                margin-right: 12px;
+            }
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+            margin-right: 244px;
+
+            li {
+                margin-left: 8px;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+
+            button {
+                padding: 8px 16px;
+                border: 0;
+                background: #fff;
+                cursor: pointer;
+
+                &:hover {
+                    font-weight: 700;
+                    background: #F2F2F2;
+                    border-radius: 16px;
+                }
+            }
+        }
+
+        .menu-sort {}
     }
 }
 
@@ -225,6 +278,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 40px;
 }
 
 .card {
