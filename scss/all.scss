@@ -226,9 +226,10 @@ body {
     .menu-bar {
         display: flex;
         margin-bottom: 40px;
+        justify-content: space-between;
 
         .menu-btn {
-            padding: 20px 40px;
+            padding: 20px 40/$max_width*100%;
             background: #FFFFFF;
             border: 1px solid #F2F2F2;
             border-radius: 16px;
@@ -236,7 +237,7 @@ body {
         }
 
         .menu-filter {
-            margin-right: 228px;
+            // margin-right: 228/$max_width*100%;
 
             span:first-child {
                 margin-right: 12px;
@@ -246,7 +247,7 @@ body {
         ul {
             display: flex;
             align-items: center;
-            margin-right: 244px;
+            // margin-right: 244/$max_width*100%;
 
             li {
                 margin-left: 8px;
@@ -276,15 +277,18 @@ body {
         justify-content: flex-end;
 
         li {
+            margin-bottom: 162px;
         }
 
         a {
             text-decoration: none;
-            display: inline-block;
+            // display: inline-block;
+            display: table-cell;
             width: 48px;
             height: 48px;
             text-align: center;
-            padding: (48px-14px)/2 0;
+            // padding: (48px-14px)/2 0;
+            vertical-align: middle;
 
             &:hover {
                 color: #FFFFFF;
@@ -303,13 +307,15 @@ body {
 }
 
 .card {
-    width: 416px;
+    width: 416/$max_width*100%;
     /* outline: 1px solid #f2f2f2; */
     margin-bottom: 24px;
     border: 1px solid #f2f2f2;
     border-radius: 16px;
 
     img {
+        max-width: 100%;
+        max-height: 100%;
         display: block;
         border-radius: 16px 16px 0 0;
     }
@@ -334,4 +340,87 @@ body {
 .detail {
     display: flex;
     justify-content: space-between;
+}
+
+.footer {
+    div {
+        display: flex;
+
+        &:first-child {
+            flex-direction: column;
+            align-items: center;
+
+            h3 {
+                margin-top: 158px;
+                margin-bottom: 40px;
+            }
+
+            button {
+                padding: 20px 32px 20px 40px;
+                border: 1px solid #FFFFFF;
+                border-radius: 16px;
+                background: #000;
+                margin-bottom: 160px;
+
+                span {
+                    vertical-align: bottom;
+
+                    &:first-child {
+                        margin-right: 12px;
+                    }
+                }
+            }
+        }
+
+        &:nth-child(2) {
+            justify-content: space-between;
+            padding: 80px 0;
+            border-top: 1px solid #FFFFFF;
+
+            a {
+                text-decoration: none;
+            }
+
+            img {
+                height: 40px;
+            }
+        }
+
+        &:nth-child(3) {
+            padding: 20px 0px;
+            border-top: 1px solid #FFFFFF;
+            justify-content: space-between;
+
+            div {
+                display: flex;
+                flex-direction: row;
+
+                p {
+                    // width: 123;
+                    margin-right: 100px;
+                }
+
+                ol {
+                    display: flex;
+
+                    li:first-child,
+                    li:nth-child(2) {
+                        margin-right: 20px;
+                    }
+
+                    a {
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            &>a {
+                text-decoration: none;
+
+                span:first-child {
+                    margin-right: 12px;
+                }
+            }
+        }
+    }
 }
