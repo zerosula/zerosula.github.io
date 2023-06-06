@@ -67,6 +67,42 @@ body {
     margin-bottom: 160px;
 }
 
+.decos {
+    // 動畫效果參考同學「亭君 陳、Tina02#2691」。
+    overflow: hidden; // 自動隱藏超出的文字或圖片。
+
+    img {
+        position: relative;
+
+        &:first-child {
+            animation: xoxo 3.5s 0.8s ease-in-out infinite;
+        }
+
+        &:nth-child(2) {
+            animation: xoxo 3.5s 0.4s ease-in-out infinite;
+        }
+
+        &:last-child {
+            animation: xoxo 3.5s 0s ease-in-out infinite;
+        }
+
+        @keyframes xoxo {
+            0% {
+                bottom: -190px;
+            }
+
+            40%,
+            60% {
+                bottom: 0;
+            }
+
+            100% {
+                bottom: 190px;
+            }
+        }
+    }
+}
+
 .service_slogan {
     display: flex;
     justify-content: space-between;
@@ -361,6 +397,10 @@ body {
                 border-radius: 16px;
                 background: #000;
                 margin-bottom: 160px;
+
+                &:hover {
+                    cursor: pointer;
+                }
 
                 span {
                     vertical-align: bottom;

@@ -1,3 +1,4 @@
+// font-size
 .fz-14 {
     font-size: 14px;
 }
@@ -30,6 +31,7 @@
     font-size: 120px;
 }
 
+// line-height
 .lh-120 {
     line-height: 120%;
 }
@@ -38,6 +40,7 @@
     line-height: 150%;
 }
 
+// color
 .b-0 {
     color: #FFFFFF;
 }
@@ -48,4 +51,9 @@
 
 .b-100 {
     color: #020202;
+}
+
+// text-decoration
+.td-n {
+    text-decoration: none;
 }

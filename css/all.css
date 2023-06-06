@@ -51,6 +51,10 @@
   color: #020202;
 }
 
+.td-n {
+  text-decoration: none;
+}
+
 .ns-tc4 {
   font-family: "Noto Sans TC", sans-serif;
   font-weight: 400;
@@ -126,6 +130,33 @@ body {
 .title div {
   align-self: flex-end;
   margin-bottom: 160px;
+}
+
+.decos {
+  overflow: hidden;
+}
+.decos img {
+  position: relative;
+}
+.decos img:first-child {
+  animation: xoxo 3.5s 0.8s ease-in-out infinite;
+}
+.decos img:nth-child(2) {
+  animation: xoxo 3.5s 0.4s ease-in-out infinite;
+}
+.decos img:last-child {
+  animation: xoxo 3.5s 0s ease-in-out infinite;
+}
+@keyframes xoxo {
+  0% {
+    bottom: -190px;
+  }
+  40%, 60% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 190px;
+  }
 }
 
 .service_slogan {
@@ -375,6 +406,9 @@ body {
   border-radius: 16px;
   background: #000;
   margin-bottom: 160px;
+}
+.footer div:first-child button:hover {
+  cursor: pointer;
 }
 .footer div:first-child button span {
   vertical-align: bottom;
